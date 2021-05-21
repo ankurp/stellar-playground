@@ -1,3 +1,3 @@
-# http-server-ezgszb
+# Stellar Quest 3
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/http-server-ezgszb)
+Playground for Stellar Quest
