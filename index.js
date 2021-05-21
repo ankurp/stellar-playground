@@ -1,15 +1,16 @@
-// import {
-//   Server,
-//   Keypair,
-//   Operation,
-//   Asset,
-//   TimeoutInfinite,
-//   Networks,
-//   BASE_FEE,
-//   TransactionBuilder
-// } from 'stellar-sdk';
+const sdk = require('stellar-sdk');
 const fetch = require('node-fetch');
-// import fs from 'fs';
+const fs = require('fs');
+const {
+  Server,
+  Keypair,
+  Operation,
+  Asset,
+  TimeoutInfinite,
+  Networks,
+  BASE_FEE,
+  TransactionBuilder
+} = sdk;
 
 // function to encode file data to base64 encoded string
 async function base64Encode(url) {
@@ -17,11 +18,7 @@ async function base64Encode(url) {
   return new Buffer.from(bitmap).toString('base64');
 }
 
-const data = base64Encode(
-  'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
-);
-
-// console.log(data);
+const data = base64Encode('');
 
 // const server = new Server('https://horizon-testnet.stellar.org');
 // const sourceKey = Keypair.fromSecret(
